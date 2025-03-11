@@ -53,7 +53,7 @@
             packages = [ pkgs.just ];
             shellHook = ''
               ln -sf ${builtins.toString commonJustfile} ./${cfg.commonFileName}
-              echo -e "\n\e[33m\e[0m Run 'just <\e[35m$(just --summary)\e[0m>' to get started \e[33m\e[0m "
+              echo -e "\n\e[33m\e[0m Run 'just <\e[35m$(just --summary | sed 's/default //g')\e[0m>' to get started \e[33m\e[0m "
             '';
           };
       };

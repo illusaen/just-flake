@@ -55,7 +55,7 @@ in
     treefmt.justfile = ''
       # Auto-format the source tree using treefmt
       fmt:
-        treefmt
+        treefmt -u "debug"
     '';
   };
 }

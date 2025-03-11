@@ -55,8 +55,8 @@
               ln -sf ${builtins.toString commonJustfile} ./${cfg.commonFileName}
 
               echo
-              echo "🍎🍎 Run 'just <recipe>' to get started"
-              just --list
+              echo " Run 'just <recipe>' to get started  "
+              just --summary
             '';
           };
       };
